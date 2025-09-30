@@ -15,7 +15,7 @@ import {
   SiFirebase,
   SiNextdotjs,
   SiSolidity,
-  SiPostgresql,SiTypescript,SiFlutter
+  SiPostgresql,SiTypescript,SiFlutter,SiNestjs
 } from "react-icons/si";
 function Techstack() {
   return (
@@ -39,7 +39,7 @@ function Techstack() {
         <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <SiNestjs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiFlutter />
