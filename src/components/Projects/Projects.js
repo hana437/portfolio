@@ -2,11 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/lersha.png";
 import chatify from "../../Assets/Projects/dc-dashboard.png";
-import suicide from "../../Assets/Projects/suicide.png";
+import cf from "../../Assets/Projects/cf.png";
+import cb from "../../Assets/Projects/cb.png";
+
 import bitsOfCode from "../../Assets/Projects/bank.png";
 
 function Projects() {
@@ -26,9 +26,9 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="Dc Dashboard"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              description="DC Portal is a web-based data collection and project management platform designed to streamline how project manage farmer information and field operations. The system empowers users to efficiently collect, update, and analyze farmer data while also managing company-led agricultural projects through customizable, dynamic forms."
               ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              demoLink="http://51.20.140.67:8097"
             />
           </Col>
 
@@ -37,9 +37,9 @@ function Projects() {
               imgPath={bitsOfCode}
               isBlog={false}
               title="Credit Score Dashboard"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              description="As part of Lersha’s partnership with financial institutions, I developed a Credit Score and Loan Management Dashboard that enables lersha's and banks to provide and track agricultural loans for farmers. The system is built with multi-bank support, allowing each partner bank to operate with separate branding, logic, and workflows, all within one unified platform."
               ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              demoLink="http://51.20.140.67:8094"
             />
           </Col>
 
@@ -48,7 +48,7 @@ function Projects() {
               imgPath={editor}
               isBlog={false}
               title="Lersha Dashboard"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              description="The Lersha Admin Portal is a robust administrative dashboard designed to give full control over the Lersha ecosystem. It allows admins to manage users, monitor transactions, oversee product listings, and track mechanization service orders in real-time."
               ghLink="https://github.com/soumyajit4419/Editor.io"
               demoLink="https://editor.soumya-jit.tech/"              
             />
@@ -56,10 +56,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={cf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
+              title="Contrat Farming"
+              description="As part of my work in the agricultural technology sector, I developed an integrated contract farming platform that simplifies key processes for farmers and processors. This includes a streamlined farmer registration system for both individual and lead farmers, an intuitive interface for capturing and managing detailed farmer visit reports, and an efficient tool for handling contract agreements. The platform enhances transparency, improves collaboration, and optimizes the management of farming operations, fostering stronger partnerships and boosting productivity in the agricultural industry."
               ghLink="https://github.com/soumyajit4419/Plant_AI"
               demoLink="https://plant49-ai.herokuapp.com/"
             />
@@ -67,26 +67,16 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={cb}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              title="Custmer base system"
+              description="I also developed a customer base   dashboard to retrieve up-to-date service and project information, manage FAQs, and assign follow-up tasks to relevant internal teams. The system bridges field operations, customer support, and internal collaboration — ensuring consistent, efficient communication across all user types"
               ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
+         
         </Row>
       </Container>
     </Container>
